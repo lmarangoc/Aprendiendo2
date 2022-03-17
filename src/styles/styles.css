@@ -1,0 +1,132 @@
+body {
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(58, 170, 204);
+}
+
+.navbar > li {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}    
+
+.mainButton {
+  background-color: #9A60E1;
+  color: white;
+}
+
+.button {
+  border: 0px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bolder;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.mainButton {
+  background-color: #9A60E1;
+  color: white;
+}
+
+.mainButton:hover {
+  box-shadow: 3px 3px #B895E3;
+}
+
+.secondaryButton {
+  background-color: #B9A5D1;
+  color: white;
+}
+
+.secondaryButton:hover {
+  box-shadow: 1.5px 1.5px #C3ADDE;
+}    
+
+.buscar {
+  background-color: white;
+  border: 1px solid gray;
+  padding: 4px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buscar:focus-within {
+  border: 2px solid blueviolet;
+  transform: scale(1.1);
+  width: 150%;
+}
+
+.buscar > input {
+  outline: none;
+  border: 0px;
+}
+
+.breedCard {
+  margin: 8.5px;
+  background-color: plum;
+  color: #581845;
+  border-radius: 10px;
+  padding-bottom: 3px;
+}    
+
+.breedCardContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.breedTitle {
+  justify-content: center;
+  margin: 10px;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.contenedorImagen {
+  width: 420px;
+  height: 420px;
+  display: flex;
+  padding-bottom: 1px;
+}
+
+.contenedorImagen:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.contenedorImagen > img {
+  object-fit: scale-down;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.titleSection {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 2.5px;
+  color: #581845;
+}
+
+.cardView {
+  display: flex;
+  justify-content: space-around;
+}
