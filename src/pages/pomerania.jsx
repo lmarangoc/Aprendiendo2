@@ -1,5 +1,9 @@
-function PomeraniaInfoPage() {
-    return <div>Esta es la página de información del Pomerania</div>;
+import React from "react";
+
+const PomeraniaInfoPage = () => {
+  return (
+    <div>Página de información del Pomerania</div>
+  )
 }
 
 export default PomeraniaInfoPage;
