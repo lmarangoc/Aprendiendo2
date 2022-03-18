@@ -1,9 +1,13 @@
-function CardRazasPerros({ imagen, nombreRaza, heart, comment, eye}) {
+import { Link } from "react-router-dom";
+
+function CardRazasPerros({ imagen, nombreRaza, heart, comment, eye, pagina}) {
     return (
         <li className="breedCard" >
-            <div className="contenedorImagen">
-                <img src={imagen} alt={nombreRaza}/> 
-            </div>
+            <Link to={pagina}>
+                <div className="contenedorImagen">
+                    <img src={imagen} alt={nombreRaza}/> 
+                </div>
+            </Link>
             <span className="breedTitle">{nombreRaza}</span>
             <div className="cardView">
                 <i className="fas fa-heart">{heart}</i>

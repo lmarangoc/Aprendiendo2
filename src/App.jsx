@@ -1,47 +1,21 @@
-import CardRazasPerros from './components/CardRazasperros';
-import './styles/styles.css';
-import dog from './media/dog.png'
-import pomerania from './media/Pomerania.png';
-import bichonMaltes from './media/BichonMaltes.png';
-import jackRussellTerrier from './media/JackRussellTerrier.png';
-
+import Index from 'pages';
+import PomeraniaInfoPage from 'pages/pomerania';
+import BichonMaltesInfoPage from 'pages/bichonmaltes';
+import JackRussellTerrierInfoPage from 'pages/jackrussellterrier';
+import { BrowserRouter, Routes, Route, } from 'react-router-dom';
+import 'styles/styles.css';
 
 function App() {
-  return (
-    <div className="App">
-          <header>
-        <ul className="navbar">
-            <li>
-                <img src={dog} alt="Imagen" class="logo" />
-            </li>
-            <li>
-                <button className="button mainButton">Nuevo post</button>
-            </li>
-            <li>
-                <div className="buscar">
-                    <input placeholder="Buscar una raza" type="text" />
-                    <i className="fas fa-search button"></i>
-                </div>
-            </li>
-            <li>
-                <button className="button secondaryButton">Iniciar sesión</button>
-            </li>
-            <li>
-                <button className="button mainButton">Registrarme</button>
-            </li>
-        </ul>
-    </header>
-    <main>
-        <section>
-            <h1 className="titleSection">RAZAS DE PERROS</h1>
-            <ul className="breedCardContainer">
-                <CardRazasPerros imagen={pomerania} nombreRaza='Pomerania' heart=' 2.5k' comment=' 1.2k' eye=' 3.1k'/>
-                <CardRazasPerros imagen={bichonMaltes} nombreRaza='Bichón Maltés' heart=' 2.8k' comment=' 1.1k' eye=' 3.5k'/>
-                <CardRazasPerros imagen={jackRussellTerrier} nombreRaza='Jack Russell Terrier' heart=' 3.2k' comment=' 1.8k' eye=' 4.2k'/>
-            </ul>
-        </section>
-    </main>
-    <footer></footer>
+  return ( 
+    <div className='App'>
+        <BrowserRouter>
+            <Routes>
+                <Route path='pomerania' element={<PomeraniaInfoPage />} />
+                <Route path='bichonmaltes' element={<BichonMaltesInfoPage />} />
+                <Route path='jackrussellterrier' element={<JackRussellTerrierInfoPage />} />
+                <Route path='/' element={<Index />} />
+            </Routes>
+        </BrowserRouter>
     </div>
   );
 }
