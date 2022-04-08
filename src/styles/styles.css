@@ -22,7 +22,7 @@ ul {
 
 .mainContainer > footer {
   background-color: red;
-  padding:10px;
+  padding: 10px;
 }
 
 .navbar {
@@ -39,10 +39,10 @@ ul {
 
 .logo {
   height: 40px;
-}    
+}
 
 .mainButton {
-  background-color: #9A60E1;
+  background-color: #9a60e1;
   color: white;
 }
 
@@ -59,22 +59,22 @@ ul {
 }
 
 .mainButton {
-  background-color: #9A60E1;
+  background-color: #9a60e1;
   color: white;
 }
 
 .mainButton:hover {
-  box-shadow: 3px 3px #B895E3;
+  box-shadow: 3px 3px #b895e3;
 }
 
 .secondaryButton {
-  background-color: #B9A5D1;
+  background-color: #b9a5d1;
   color: white;
 }
 
 .secondaryButton:hover {
-  box-shadow: 1.5px 1.5px #C3ADDE;
-}    
+  box-shadow: 1.5px 1.5px #c3adde;
+}
 
 .buscar {
   background-color: white;
@@ -102,7 +102,7 @@ ul {
   color: #581845;
   border-radius: 10px;
   padding-bottom: 3px;
-}    
+}
 
 .breedCardContainer {
   display: flex;
@@ -137,7 +137,7 @@ ul {
 .titleSection {
   display: flex;
   justify-content: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: 10px;
   margin-bottom: 2.5px;
   color: #581845;
@@ -146,4 +146,20 @@ ul {
 .cardView {
   display: flex;
   justify-content: space-around;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  padding: 5px;
+  border-radius: 8px;
+}
+
+input:focus {
+  border: 0px;
 }
