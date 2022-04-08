@@ -10,6 +10,13 @@ const PomeraniaInfoPage = () => {
         <input className="input" type="password" />
         <input className="input" type="email" />
         <input className="input" type="file" />
+        <select required defaultValue={0}>
+          <option disabled value="0">
+            Seleccione una opción
+          </option>
+          <option>Opción 1</option>
+          <option>Opción 2</option>
+        </select>
         <button>Summit</button>
       </form>
     </div>
