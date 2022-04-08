@@ -5,7 +5,6 @@ import BichonMaltesInfoPage from 'pages/bichonmaltes';
 import JackRussellTerrierInfoPage from 'pages/jackrussellterrier';
 import { BrowserRouter, Routes, Route, } from 'react-router-dom';
 import 'styles/styles.css';
-import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return ( 
